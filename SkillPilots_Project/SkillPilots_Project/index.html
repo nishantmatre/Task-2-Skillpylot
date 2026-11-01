@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots | Career Path</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">✦</span> skillpilots<sup>®</sup></div>
+    <nav>
+      <a href="#">⌂ <span>Dashboard</span></a>
+      <small>PAGES</small>
+      <a href="#">♧ <span>Self Assessment</span></a>
+      <a href="#">▥ <span>College Assessment</span></a>
+      <a href="#">▣ <span>Skill Assessment</span></a>
+      <a class="active" href="#">⑂ <span>Career Path</span></a>
+      <a href="#">▣ <span>Mentor Connect</span></a>
+      <a href="#">♧ <span>Mock Interview</span></a>
+      <a href="#">▤ <span>Learning Materials</span></a>
+      <a href="#">◎ <span>Opportunities</span></a>
+      <a href="#">▤ <span>Resume</span></a>
+      <a href="#">▣ <span>Applied Opportunities</span></a>
+      <a href="#">♟ <span>Problem Statements</span></a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">✦ skillpilots</div>
+      <div class="top-actions"><button aria-label="Theme" id="themeBtn">☾</button><button aria-label="Notifications">♧<sup>2</sup></button><button aria-label="Documents">▢</button><div class="avatar">SP</div></div>
+    </header>
+
+    <section class="content">
+      <div class="left-column">
+        <section class="panel schedule">
+          <div class="panel-heading">
+            <div><h2>▣ Learning Schedule <span class="level">Beginner</span></h2><div class="legend"><span class="done-dot"></span> Done <span class="today-dot"></span> Today <span class="up-dot"></span> Upcoming</div></div>
+          </div>
+          <div class="days" id="days"></div>
+          <div class="progress-wrap"><div class="progress-label"><span>Learning progress</span><strong>21%</strong></div><div class="progress"><span></span></div></div>
+          <div class="score"><strong>21</strong><span>+5.4%</span><small>Skills progress score</small></div>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="panel focus">
+          <h2>▣ Today's Focus: Version Control with Git</h2>
+          <p class="muted">Day 8 · 3 tasks</p>
+          <article class="task completed"><div><strong>Understand version control basics</strong><small>Learn why Git is used in software projects</small></div><span>✓ Completed</span></article>
+          <article class="task"><div><strong>Practice Git commands</strong><small>Learn git status, git add, git commit, and git push</small></div><button class="practice">Practice</button></article>
+          <article class="task project"><div><strong>Remote repository workflow</strong><small>Set up a Git repository for the counter project, commit the initial version, and push to a new GitHub repo.</small><em>Remote repository workflow</em></div><button class="submit" id="openModal">🚀 Submit Project</button><button class="steps-link" id="openSteps">Steps</button></article>
+        </section>
+      </div>
+    </section>
+    <footer>© 2026 All Rights Reserved SkillPilots® Global Pvt. Ltd. | Designed &amp; Developed By <a href="#">SkillPilots® Global Pvt. Ltd.</a> | Contact: +91-9156288817</footer>
+  </main>
+
+  <div class="overlay" id="overlay">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <h2 id="modalTitle"><span class="info">i</span> Task Implementation Steps</h2>
+      <p class="intro">Set up a Git repository for the counter project, commit the initial version, and push to a new GitHub repo.</p>
+      <ol>
+        <li>Create a new repository on GitHub (private or public).</li>
+        <li>Add the remote URL to the local repo with <code>git remote add</code>.</li>
+        <li>Commit all project files and push the main branch.</li>
+        <li>Create a feature branch named 'counter-enhancement' and push it.</li>
+      </ol>
+      <button class="review" id="reviewBtn">I've Reviewed the Steps</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
